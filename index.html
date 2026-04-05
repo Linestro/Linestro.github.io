@@ -1,301 +1,545 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <title>Home of Ye,Haojie</title>
-
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom fonts for this template -->
-  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-
-  <!-- Custom styles for this template -->
-  <link href="css/resume.min.css" rel="stylesheet">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Haojie Ye — Deep Learning Performance Architect at NVIDIA. Ph.D. Computer Architecture, University of Michigan. Publications at HPCA, ASPLOS, MICRO, ISCA, VLDB, PACT.">
+  <title>Haojie Ye</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
+<body>
+  <div class="container">
+    <main>
 
-<body id="page-top">
+      <!-- ============ HEADER ============ -->
+      <div class="header">
+        <div class="profile-column">
+          <img src="assets/images/profile.jpg" alt="Haojie Ye" class="profile-photo" />
+          <div class="personal-links-row">
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-    <a class="navbar-brand js-scroll-trigger" href="#page-top">
-      <span class="d-block d-lg-none">Haojie Ye</span>
-      <span class="d-none d-lg-block">
-        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
-      </span>
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#CV">CV</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#education">Education</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#Publications">Publications</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#Projects">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#Quotes">Quotes</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/haojie-ye-91b935106/" class="personal-link-bar" title="LinkedIn">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+            </a>
 
-  <div class="container-fluid p-0">
+            <!-- Google Scholar -->
+            <a href="https://scholar.google.com/citations?user=8Mk6B6gAAAAJ&hl=en" class="personal-link-bar" title="Google Scholar">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/>
+              </svg>
+            </a>
 
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
-      <div class="w-100">
-        <h1 class="mb-0">Haojie
-          <span class="text-primary">Ye</span>
-        </h1>
-        <div class="subheading mb-5">2260 Hayward St, Ann Arbor, MI 48109 · (734)-239-3020 ·
-          <a>yehaojie@umich.edu</a>
+            <!-- CV -->
+            <a href="assets/Resume_HaojieYe.pdf" class="personal-link-bar" title="Download CV">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11zM8 15h8v2H8zm0-4h8v2H8zm0-4h5v2H8z"/>
+              </svg>
+            </a>
+
+          </div>
         </div>
-        <p class="lead mb-5">
-          I am Ph.D. Candidate at University of Michigan, advised by <a href="https://tnm.engin.umich.edu/">Prof. Trevor Mudge</a>. 
-          <br>
-          My research interest is Computer Architecture, Algorithm, and System Design for emerging applications. 
-          <br>
-          I received my BSE and MSE in Computer Engineering at University of Michigan in 2019 and 2021. 
-          I received another BSE in Electrical & Computer Engineering at Shanghai Jiaotong University in 2019. 
+        <div>
+          <h1>Haojie Ye</h1>
+          <span class="title-tag">Deep Learning Performance Architect · NVIDIA</span>
+          <div class="about-me">
+            <p>
+              I work at the intersection of <span class="highlight-interest">GPU architecture</span> and <span class="highlight-interest">large-scale AI systems</span> as a
+              Deep Learning Performance Architect at <a href="https://www.nvidia.com" class="highlight-blue-yellow">NVIDIA</a>.
+              My team drives performance modeling and architecture pathfinding for next-generation GPUs — shaping
+              the hardware that will power the world's most demanding AI workloads before a single chip is manufactured.
+            </p>
+            <p>
+              I hold a <strong>Ph.D. in Computer Science and Engineering</strong> (GPA 4.0/4.0) from the
+              <a href="https://umich.edu/" class="highlight-stroke highlight-institution">University of Michigan, Ann Arbor</a>,
+              advised by <a href="https://tnm.engin.umich.edu/" class="highlight-person-underline">Prof. Trevor Mudge</a>.
+              My doctoral research focused on computer architecture for AI: building hardware-software co-designs
+              for <span class="highlight-interest-secondary">recommendation systems</span>,
+              <span class="highlight-interest-secondary">graph neural networks</span>, and
+              <span class="highlight-interest-secondary">sparse linear algebra</span> that dramatically reduce
+              inference latency and energy cost.
+              I also hold a B.S.E. in Electrical &amp; Computer Engineering from
+              <a href="https://en.sjtu.edu.cn/" class="highlight-stroke highlight-institution">Shanghai Jiao Tong University</a>.
+            </p>
+            <p>
+              My work has appeared at top computer architecture venues including
+              <strong>HPCA</strong>, <strong>ASPLOS</strong>, <strong>MICRO</strong>, <strong>ISCA</strong>,
+              <strong>VLDB</strong>, and <strong>PACT</strong>.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============ RECENT UPDATES ============ -->
+      <section class="recent-updates-section">
+        <div class="section-title">Recent Updates</div>
+        <div class="updates-scroll-container">
+          <div class="update-item">
+            <span class="update-date">2025/05</span>
+            <span>
+              <span class="update-badge industry">Event</span>
+              Contributing to <strong>NVIDIA ComputeX 2025</strong> keynote — GPU architecture and AI performance leadership.
+            </span>
+          </div>
+          <div class="update-item">
+            <span class="update-date">2025/03</span>
+            <span>
+              <span class="update-badge industry">Event</span>
+              Key contributor to <strong>NVIDIA GTC 2025</strong> keynote on next-generation GPU architecture and AI roadmap.
+            </span>
+          </div>
+          <div class="update-item">
+            <span class="update-date">2025/01</span>
+            <span>
+              <span class="update-badge industry">Launch</span>
+              Contributed to the debut of the
+              <a href="https://www.nvidia.com/en-us/products/workstations/professional-desktop-gpus/rtx-pro-6000/" class="highlight-stroke">NVIDIA RTX PRO 6000 Blackwell Workstation GPU</a> —
+              performance modeling and architecture optimization for professional AI workloads.
+            </span>
+          </div>
+          <div class="update-item">
+            <span class="update-date">2025/01</span>
+            <span>
+              <span class="update-badge paper">HPCA'25</span>
+              Paper accepted at <strong>HPCA 2025</strong>: <em>"Palermo: Improving the Performance of Oblivious Memory using Protocol-Hardware Co-Design."</em>
+            </span>
+          </div>
+          <div class="update-item">
+            <span class="update-date">2024/10</span>
+            <span>
+              <span class="update-badge industry">New Role</span>
+              Joined <strong>NVIDIA</strong> (Santa Clara) as a full-time <strong>Deep Learning Performance Architect</strong> on the
+              Performance Modeling &amp; Architecture Pathfinding team.
+            </span>
+          </div>
+          <div class="update-item">
+            <span class="update-date">2024/09</span>
+            <span>
+              <span class="update-badge award">PhD</span>
+              Defended Ph.D. dissertation at the University of Michigan — Computer Architecture for emerging AI workloads.
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ INDUSTRY IMPACT ============ -->
+      <section class="industry-section">
+        <div class="section-title">Industry</div>
+        <p class="industry-description">
+          I specialize in understanding how <span class="highlight-interest">transformer-based AI models</span> map onto modern GPU hardware —
+          identifying bottlenecks across <span class="highlight-interest-secondary">compute</span>, <span class="highlight-interest-secondary">memory bandwidth</span>,
+          <span class="highlight-interest-secondary">capacity</span>, and <span class="highlight-interest-secondary">interconnect</span> —
+          and translating those findings into concrete architectural guidance for future silicon.
         </p>
-        <div class="social-icons">
-          <a href="https://www.linkedin.com/in/haojie-ye-91b935106/">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-          <a href="https://github.com/Linestro">
-            <i class="fab fa-github"></i>
-          </a>
-          <!-- <a href="#">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="#">
-            <i class="fab fa-facebook-f"></i>
-          </a> -->
-        </div>
-      </div>
-    </section>
 
-    <hr class="m-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="CV">
-      <div class="w-100">
-        <h2 class="mb-5">CV</h2>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0"><a href='Resume_HaojieYe.pdf'>Candidate Experiences</a></h3>
-            <div class="subheading mb-3">Ph.D. Candidate</div>
+        <div class="industry-card">
+          <div class="industry-card-header">
+            <div>
+              <p class="industry-card-title">NVIDIA — Deep Learning Performance Architect</p>
+              <p class="industry-card-subtitle">Performance Modeling &amp; Architecture Pathfinding · Santa Clara, CA</p>
+            </div>
+            <span class="industry-card-date">Oct 2024 – Present</span>
           </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">September 2019 - Current</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0"><a href='ug_CV.pdf'>Undergraduate Experiences</a></h3>
-            <div class="subheading mb-3">Undergraduate</div>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">September 2017 - August 2019</span>
-          </div>
-        </div>
-
-
-        <!-- <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0"> <a href='Resume_YeHaojie_Jan18.pdf'>Undergraduate Experiences</a></h3>
-            <div class="subheading mb-3">Undergraduate</div>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">September 2017 - May 2018</span>
-          </div>
-        </div> -->
-
-      </div>
-
-    </section>
-
-    <hr class="m-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
-      <div class="w-100">
-        <h2 class="mb-5">Education</h2>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">University of Michigan</h3>
-            <div class="subheading mb-3">Ph.D. Candidate</div>
-            <div>Computer Architecture</div>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">May 2021 - Current</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">University of Michigan</h3>
-            <div class="subheading mb-3">Ph.D. Precandidate</div>
-            <div>Computer Science and Engineering</div>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">September 2019 - May 2021</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">University of Michigan</h3>
-            <div class="subheading mb-3">Bachelor of Science</div>
-            <div>Computer Engineering</div>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">September 2017 - May 2019</span>
-          </div>
-        </div>
-
-        <!-- <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
-          <div class="resume-content">
-            <h3 class="mb-0">Shanghai Jiaotong University</h3>
-            <div class="subheading mb-3">Bachelor of Science</div>
-            <div>Electrical and Computer Engineering</div>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">September 2015 - August 2017</span>
-          </div>
-        </div> -->
-
-      </div>
-    </section>
-
-    <hr class="m-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="Publications">
-      <div class="w-100">
-
-          <h2 class="mb-5"> Publications</h2>
-          <p class="lead mb-5"> My publication is listed <a href="https://scholar.google.com/citations?user=8Mk6B6gAAAAJ&hl=en">here</a>. </p>
-	<ul class="list-inline dev-icons">
-        </ul>
-      </div>
-    </section>
-
-
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="Projects">
-      <div class="w-100">
-        <h2 class="mb-3">Projects</h2>
-          <ul class="list-inline dev-icons">
-          <li><a href="https://en.wikipedia.org/wiki/Eyes_Wide_Shut">Eyes Wide Shut</a></li>
-          <p class="lead mb-5"> Constructing. </p>
-          <li><a href="https://gitlab.eecs.umich.edu/yehaojie/eecs570_p2">MOESI Cache Protocol</a></li>
-          <p class="lead mb-5">A MOESI directory-based multi-core cache protocol simulated by <a href="http://formalverification.cs.utah.edu/Murphi/">Murphi</a></p>
-          <li><a href='https://github.com/Linestro/OSC1LITE'>Driver and User Interface of Michigan's Brain Optical Stimulation Controller</a></li>
-          <p class="lead mb-5">Mapping the brain and peripheral circuits may be the grandest challenge in a all of science today. 
-            This work is to help neuroscientists operate on these amazingly complex circuits with tools that 
-            can monitor neural activity or recreate it in a natural or biomimetic way. I developed the FPGA controller, runtime API, 
-            as well as a user interface for this product. The <a href="https://mint.engin.umich.edu/">product</a> is open to the public commercially. 
-            This work is with Dimitri James👶, Nathan Slager, Kanghwan Kim, Adam Mendrela, <a href="https://bme.umich.edu/people/john-seymour/">John Seymour</a> and Euisik Yoon. 
-            My motivation (sadly not inspiration) of this work is from <a href="https://en.wikipedia.org/wiki/Ghost_in_the_Shell_(1995_film)">Ghost in the Shell</a>.</p>
-          <li>R10K architecture Out-of-order Processor with advanced features</li>
-          <p class="lead mb-5">Out of order processing is the very base of computer architecture. I built an Alpha64 ISA, R10K architecture 
-            out of order processor with some microarch features (fancy predictors, fancy cache policies, etc.) and a memory system. 
-            This work is with Yunjin Wang and Yate Ji. </p>
+          <ul class="industry-bullets">
+            <li>
+              <strong>GPU Architecture Pathfinding (Rubin &amp; Feynman):</strong> A primary contributor to the performance
+              modeling and hardware specification process for NVIDIA's upcoming Rubin and Feynman GPU generations.
+              Deliver actionable tradeoff analyses — across compute, memory hierarchy, and interconnect — that directly
+              influence architectural decisions before tape-out.
+            </li>
+            <li>
+              <strong>AI Workload Coverage:</strong> Model state-of-the-art LLMs and AI workloads from NVIDIA's
+              largest enterprise customers — including
+              <strong>xAI</strong> (Grok), <strong>Alibaba</strong> (Qwen series), <strong>AWS</strong>,
+              <strong>Microsoft Azure</strong>, <strong>Meta</strong> (Llama 4), and <strong>ByteDance</strong> —
+              on next-generation pre-silicon GPU simulators to surface bottlenecks and guide optimization priorities.
+            </li>
+            <li>
+              <strong>Model Coverage:</strong> Llama 4, DeepSeek, Qwen3, KimiK2, Diffusion Transformers
+              (<em>Wan</em>, <em>LTX</em>), and Vision Foundation Models — spanning prefill, decode, and
+              multi-modal inference scenarios at datacenter scale.
+            </li>
+            <li>
+              <strong>RTX PRO 6000 Blackwell:</strong> Contributed to performance modeling and optimization
+              for the
+              <a href="https://www.nvidia.com/en-us/products/workstations/professional-desktop-gpus/rtx-pro-6000/" class="highlight-stroke">NVIDIA RTX PRO 6000 Blackwell Workstation GPU</a>,
+              a flagship professional GPU for AI-intensive workstation deployments.
+            </li>
+            <li>
+              <strong>Keynote Contributions:</strong> Supported GPU performance projections and architectural
+              narratives for NVIDIA's high-profile developer events including <strong>GTC 2025</strong>
+              and <strong>ComputeX 2025</strong>.
+            </li>
           </ul>
-      </div>
-    </section>
+          <div class="tech-tags">
+            <span class="tag">Pre-Silicon Simulation</span>
+            <span class="tag">LLM Inference</span>
+            <span class="tag">Transformer Architecture</span>
+            <span class="tag">GPU Microarchitecture</span>
+            <span class="tag">Memory Systems</span>
+            <span class="tag">Performance Modeling</span>
+            <span class="tag">CUDA</span>
+            <span class="tag">HBM / Interconnect</span>
+          </div>
+        </div>
 
-    <hr class="m-0">
+        <div class="industry-card">
+          <div class="industry-card-header">
+            <div>
+              <p class="industry-card-title">NVIDIA — Deep Learning Performance Architect Intern</p>
+              <p class="industry-card-subtitle">Performance Modeling &amp; Projection · Santa Clara, CA</p>
+            </div>
+            <span class="industry-card-date">May 2023 – Aug 2023</span>
+          </div>
+          <ul class="industry-bullets">
+            <li>Independent R&amp;D in modeling large language models on future GPU architectures.</li>
+            <li>Developed performance projection methodology later adopted into production modeling infrastructure.</li>
+          </ul>
+        </div>
 
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
-      <div class="w-100">
-        <h2 class="mb-5">Interests</h2>
-        <p class="lead mb-5">When not thinking, I learn piano & make <a href="https://www.bilibili.com/video/av24197866/">Vaprotrap Music</a>. </p>
-        <p class="lead mb-5">I like <a href="https://www.youtube.com/watch?v=UXQraSkOOGs" >experimental films</a>. </p>
-      </div>
-    </section>
+        <div class="industry-card">
+          <div class="industry-card-header">
+            <div>
+              <p class="industry-card-title">Micron Technology — Advanced Hardware Development Intern</p>
+              <p class="industry-card-subtitle">Enhanced In-Memory Function Research · Allen, TX</p>
+            </div>
+            <span class="industry-card-date">May 2022 – Aug 2022</span>
+          </div>
+          <ul class="industry-bullets">
+            <li>Independent research on enhanced in-memory compute functions for Micron's next-generation memory modules.</li>
+            <li>Contributed to <strong>1 Micron internal journal</strong> and <strong>2 U.S. patents</strong>.</li>
+          </ul>
+        </div>
+      </section>
 
-    <hr class="m-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="awards">
-      <div class="w-100">
-        <h2 class="mb-5">Awards &amp; Certifications</h2>
-          <p class="lead mb-5">
-            James B. Angell Scholar (2019.5)</p>
-          <p class="lead mb-5">
-            Outstanding Research Award (2019.3)</p>
-          <!-- <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            1<sup>st</sup>
-            Place - University of Colorado Boulder - Emerging Tech Competition 2009</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            1<sup>st</sup>
-            Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            2<sup>nd</sup>
-            Place - University of Colorado Boulder - Emerging Tech Competition 2008</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            1<sup>st</sup>
-            Place - James Buchanan High School - Hackathon 2006</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            3<sup>rd</sup>
-            Place - James Buchanan High School - Hackathon 2005</li> -->
-      </div>
-    </section>
-
-
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="Quotes">
-      <div class="w-100">
-        <h2 class="mb-5">Quotes</h2>
-        <p class="lead mb-5">We must imagine Sisyphus happy. --- Albert Camus</p>
-        <p class="lead mb-5"> Therefore solitude is inadvisable to many. --- Friedrich Nietzsche</p>
-	<p class="lead mb-5">
-          My academic research design choices on architecting computers focuses on solely 2 principles. a) Virtualization, isolating from the reality beyond the perception. b) Pessimism, the ability to reject and demise design choices such as lower level caches, open-row policy, and numerous of other evil optimistic designs. --- Me 
+      <!-- ============ RESEARCH ============ -->
+      <section class="research-section">
+        <div class="section-title">Research</div>
+        <p class="research-description">
+          My academic work builds hardware-software co-designs that close the gap between
+          <span class="highlight-interest">algorithm complexity</span> and
+          <span class="highlight-interest">hardware efficiency</span> for AI-scale workloads.
+          Key themes include: <span class="highlight-interest-secondary">recommendation system acceleration</span>,
+          <span class="highlight-interest-secondary">sparse GEMM on systolic arrays</span>,
+          <span class="highlight-interest-secondary">graph pattern mining hardware</span>, and
+          <span class="highlight-interest-secondary">LLM fine-tuning cost modeling</span>.
+          Full list on <a href="https://scholar.google.com/citations?user=8Mk6B6gAAAAJ&hl=en" class="highlight-stroke">Google Scholar</a>.
         </p>
-      </div>
-    </section>
 
+        <!-- HPCA'25 - Palermo -->
+        <div class="research-item">
+          <div class="research-image">
+            <div class="paper-thumb thumb-hpca">
+              <span class="thumb-venue">HPCA'25</span>
+              <span class="thumb-label">Protocol-Hardware Co-Design · Oblivious Memory</span>
+            </div>
+          </div>
+          <div class="research-content">
+            <h3>Palermo: Improving the Performance of Oblivious Memory using Protocol-Hardware Co-Design</h3>
+            <div class="research-authors">
+              <strong>H. Ye</strong>, Y. Xia, Y. Chen, K. Chen, Y. Yuan, S. Deng, B. Kasikci, T. Mudge, N. Talati
+            </div>
+            <div class="research-venue">
+              <a href="https://hpca-conf.org/" class="venue-link">HPCA 2025</a>
+              <span class="venue-note">· IEEE Intl. Symposium on High-Performance Computer Architecture</span>
+            </div>
+            <p>
+              Palermo addresses the severe performance penalty of Oblivious RAM (ORAM) — a cryptographic primitive
+              for privacy-preserving computation — through a co-designed protocol and hardware that dramatically
+              reduces memory access overhead, enabling practical secure computation on real hardware.
+            </p>
+            <div class="research-links">
+              <a href="assets/papers/palermo_hpca25.pdf">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>
+                paper
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ASPLOS'23 - GRACE -->
+        <div class="research-item">
+          <div class="research-image">
+            <div class="paper-thumb thumb-asplos">
+              <span class="thumb-venue">ASPLOS'23</span>
+              <span class="thumb-label">Graph-Based Recommendation · Embedding Prefetch</span>
+            </div>
+          </div>
+          <div class="research-content">
+            <h3>GRACE: A Scalable Graph-Based Approach to Accelerating Recommendation Model Inference</h3>
+            <div class="research-authors">
+              <strong>H. Ye</strong>, S. Vedula, Y. Chen, Y. Yang, A. Bronstein, R. Dreslinski, T. Mudge, N. Talati
+            </div>
+            <div class="research-venue">
+              <a href="https://asplos-conference.org/" class="venue-link">ASPLOS 2023</a>
+              <span class="venue-note">· ACM Intl. Conference on Architectural Support for Programming Languages and Operating Systems</span>
+            </div>
+            <p>
+              Industrial recommendation models (powering feeds at Meta, TikTok, and similar platforms) are dominated by
+              sparse embedding lookups into multi-terabyte tables. GRACE exploits the graph structure of user-item
+              interactions to accurately predict and prefetch embeddings, cutting inference latency by up to
+              <strong>2.4×</strong> with negligible area overhead — a direct path to faster, cheaper recommendation serving.
+            </p>
+            <div class="research-links">
+              <a href="assets/papers/grace_asplos23.pdf">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>
+                paper
+              </a>
+              <a href="https://www.youtube.com/watch?v=GOLQUGjBH7I" class="link-talk">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M10 16.5l6-4.5-6-4.5v9zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
+                ASPLOS talk
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ISCA'22 - NDMiner -->
+        <div class="research-item">
+          <div class="research-image">
+            <div class="paper-thumb thumb-isca">
+              <span class="thumb-venue">ISCA'22</span>
+              <span class="thumb-label">Near-Data Processing · Graph Pattern Mining</span>
+            </div>
+          </div>
+          <div class="research-content">
+            <h3>NDMiner: Accelerating Graph Pattern Mining Using Near Data Processing</h3>
+            <div class="research-authors">
+              N. Talati, <strong>H. Ye</strong>, Y. Yang, L. Belayneh, K. Chen, D. Blaauw, T. Mudge, R. Dreslinski
+            </div>
+            <div class="research-venue">
+              <a href="https://iscaconf.org/" class="venue-link">ISCA 2022</a>
+              <span class="venue-note">· ACM/IEEE Intl. Symposium on Computer Architecture</span>
+            </div>
+            <p>
+              Graph pattern mining (subgraph isomorphism, motif counting) is a cornerstone of drug discovery,
+              fraud detection, and knowledge graph reasoning. NDMiner moves computation to where data lives —
+              inside memory — eliminating the memory bandwidth bottleneck that cripples conventional GPU approaches
+              on large irregular graphs.
+            </p>
+            <div class="research-links">
+              <a href="https://dl.acm.org/doi/10.1145/3470496.3527437">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>
+                paper
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- MICRO'22 - Mint -->
+        <div class="research-item">
+          <div class="research-image">
+            <div class="paper-thumb thumb-micro">
+              <span class="thumb-venue">MICRO'22</span>
+              <span class="thumb-label">Temporal Graph Mining · Hardware Accelerator</span>
+            </div>
+          </div>
+          <div class="research-content">
+            <h3>Mint: An Accelerator for Mining Temporal Motifs</h3>
+            <div class="research-authors">
+              N. Talati, <strong>H. Ye</strong>, S. Vedula, K. Chen, Y. Chen, D. Liu, D. Blaauw, A. Bronstein, T. Mudge, R. Dreslinski
+            </div>
+            <div class="research-venue">
+              <a href="https://microarch.org/" class="venue-link">MICRO 2022</a>
+              <span class="venue-note">· IEEE/ACM Intl. Symposium on Microarchitecture</span>
+            </div>
+            <p>
+              Temporal motif mining — discovering recurring time-ordered interaction patterns in dynamic graphs —
+              is foundational to fraud detection, social network analysis, and biological pathway discovery.
+              Mint introduces the first purpose-built hardware accelerator for this problem, achieving orders-of-magnitude
+              speedup over CPU and GPU baselines.
+            </p>
+            <div class="research-links">
+              <a href="https://arxiv.org/abs/2311.12314">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>
+                paper
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ICS'20 - Sparse-TPU -->
+        <div class="research-item">
+          <div class="research-image">
+            <div class="paper-thumb thumb-ics">
+              <span class="thumb-venue">ICS'20</span>
+              <span class="thumb-label">Sparse GEMM · Systolic Arrays · TPU</span>
+            </div>
+          </div>
+          <div class="research-content">
+            <h3>Sparse-TPU: Adapting Systolic Arrays for Sparse Matrices</h3>
+            <div class="research-authors">
+              X. He, S. Pal, A. Amarnath, S. Feng, D. Park, A. Rovinski, <strong>H. Ye</strong>, Y. Chen, R. Dreslinski, T. Mudge
+            </div>
+            <div class="research-venue">
+              <a href="https://dl.acm.org/conference/ics" class="venue-link">ICS 2020</a>
+              <span class="venue-note">· ACM Intl. Conference on Supercomputing</span>
+            </div>
+            <p>
+              Systolic array accelerators (TPUs) are highly efficient for dense GEMM but waste most of their
+              compute budget on zero-valued elements in sparse networks. Sparse-TPU augments systolic arrays with
+              lightweight sparsity-aware dataflow, recovering significant throughput on pruned and sparse neural
+              network models without expensive hardware redesigns.
+            </p>
+            <div class="research-links">
+              <a href="https://dl.acm.org/doi/10.1145/3392717.3392751">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>
+                paper
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- VLDB'24 - Everest -->
+        <div class="research-item">
+          <div class="research-image">
+            <div class="paper-thumb thumb-vldb">
+              <span class="thumb-venue">VLDB'24</span>
+              <span class="thumb-label">GPU-Accelerated · Temporal Motif Mining</span>
+            </div>
+          </div>
+          <div class="research-content">
+            <h3>Everest: GPU-Accelerated System for Mining Temporal Motifs</h3>
+            <div class="research-authors">
+              Y. Yuan, <strong>H. Ye</strong>, S. Vedula, W. Kaza, N. Talati
+            </div>
+            <div class="research-venue">
+              <a href="https://vldb.org/" class="venue-link">VLDB 2024</a>
+              <span class="venue-note">· Proceedings of the VLDB Endowment</span>
+            </div>
+            <p>
+              Everest brings temporal motif mining to GPU scale, building on the algorithmic insights of Mint
+              and delivering a production-grade GPU-accelerated system capable of processing billion-edge temporal
+              graphs that are far beyond the reach of prior CPU-based tools.
+            </p>
+            <div class="research-links">
+              <a href="https://arxiv.org/abs/2310.02800">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>
+                paper
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- IISWC'24 - LLM Fine-tuning -->
+        <div class="research-item">
+          <div class="research-image">
+            <div class="paper-thumb thumb-iiswc">
+              <span class="thumb-venue">IISWC'24</span>
+              <span class="thumb-label">LLM Fine-Tuning · Cost Modeling · Performance</span>
+            </div>
+          </div>
+          <div class="research-content">
+            <h3>Understanding the Performance and Estimating the Cost of LLM Fine-Tuning</h3>
+            <div class="research-authors">
+              Y. Xia, J. Kim, Y. Chen, <strong>H. Ye</strong>, S. Kundu, C. Hao, N. Talati
+            </div>
+            <div class="research-venue">
+              <a href="https://iiswc.org/" class="venue-link">IISWC 2024</a>
+              <span class="venue-note">· IEEE Intl. Symposium on Workload Characterization</span>
+            </div>
+            <p>
+              Fine-tuning large language models is notoriously expensive and opaque to practitioners.
+              This work provides a systematic characterization of LLM fine-tuning workloads across hardware platforms,
+              offering actionable cost models and bottleneck analyses that help teams make informed infrastructure
+              decisions — directly relevant to any organization training or adapting LLMs.
+            </p>
+            <div class="research-links">
+              <a href="https://arxiv.org/abs/2408.04693">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>
+                paper
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- PACT'22 - Multi-GPU -->
+        <div class="research-item">
+          <div class="research-image">
+            <div class="paper-thumb thumb-pact">
+              <span class="thumb-venue">PACT'22</span>
+              <span class="thumb-label">Multi-GPU · Remote Memory · Latency Optimization</span>
+            </div>
+          </div>
+          <div class="research-content">
+            <h3>Locality-Aware Optimizations for Improving Remote Memory Latency in Multi-GPU Systems</h3>
+            <div class="research-authors">
+              L. Belayneh, <strong>H. Ye</strong>, K. Chen, D. Blaauw, T. Mudge, R. Dreslinski, N. Talati
+            </div>
+            <div class="research-venue">
+              <a href="https://pactconf.org/" class="venue-link">PACT 2022</a>
+              <span class="venue-note">· ACM Intl. Conference on Parallel Architectures and Compilation Techniques</span>
+            </div>
+            <p>
+              As AI models outgrow single-GPU memory, multi-GPU systems with NVLink/NVSwitch become essential.
+              This work characterizes and mitigates remote memory access latency in multi-GPU environments through
+              locality-aware data placement and access pattern optimization — directly applicable to large-model
+              inference and training across GPU clusters.
+            </p>
+            <div class="research-links">
+              <a href="assets/papers/pact22_multiGPU.pdf">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>
+                paper
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- ============ EDUCATION ============ -->
+      <section class="education-section">
+        <div class="section-title">Education</div>
+        <div class="edu-item">
+          <div class="edu-content">
+            <p class="edu-degree">Ph.D., Computer Science &amp; Engineering</p>
+            <p class="edu-school"><a href="https://umich.edu/" class="highlight-stroke highlight-institution">University of Michigan, Ann Arbor</a> · Advised by <a href="https://tnm.engin.umich.edu/" class="highlight-person-underline">Prof. Trevor Mudge</a></p>
+            <p class="edu-detail">GPA 4.0/4.0 · Focus: Computer Architecture for AI workloads</p>
+          </div>
+          <span class="edu-date">2019 – 2024</span>
+        </div>
+        <div class="edu-item">
+          <div class="edu-content">
+            <p class="edu-degree">M.S.E., Computer Science &amp; Engineering</p>
+            <p class="edu-school"><a href="https://umich.edu/" class="highlight-stroke highlight-institution">University of Michigan, Ann Arbor</a></p>
+            <p class="edu-detail">GPA 4.0/4.0</p>
+          </div>
+          <span class="edu-date">2019 – 2021</span>
+        </div>
+        <div class="edu-item">
+          <div class="edu-content">
+            <p class="edu-degree">B.S.E., Computer Engineering</p>
+            <p class="edu-school"><a href="https://umich.edu/" class="highlight-stroke highlight-institution">University of Michigan, Ann Arbor</a></p>
+          </div>
+          <span class="edu-date">2017 – 2019</span>
+        </div>
+        <div class="edu-item">
+          <div class="edu-content">
+            <p class="edu-degree">B.S.E., Electrical &amp; Computer Engineering</p>
+            <p class="edu-school"><a href="https://en.sjtu.edu.cn/" class="highlight-stroke highlight-institution">Shanghai Jiao Tong University</a></p>
+          </div>
+          <span class="edu-date">2015 – 2019</span>
+        </div>
+      </section>
+
+      <!-- ============ MISC ============ -->
+      <section class="misc-section">
+        <div class="section-title">Misc</div>
+        <ul class="misc-list">
+          <li>Piano player and electronic music producer — <a href="https://www.bilibili.com/video/av24197866/" class="highlight-stroke">Vaporwave &amp; ambient experiments</a></li>
+          <li>Experimental film enthusiast — Tarkovsky, Lynch, early Kubrick</li>
+          <li>Philosophy of mind and consciousness — from Descartes to Chalmers</li>
+        </ul>
+      </section>
+
+    </main>
   </div>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Custom scripts for this template -->
-  <script src="js/resume.min.js"></script>
-
+  <footer class="copyright-footer">
+    <p>&copy; 2025 Haojie Ye · yehaojie@umich.edu</p>
+  </footer>
 </body>
-
 </html>
