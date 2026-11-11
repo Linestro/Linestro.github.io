@@ -1,0 +1,101 @@
+% Resume source. Compile with pdflatex from this directory.
+\documentclass[11pt,letterpaper]{article}
+\usepackage[margin=0.65in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\input{glyphtounicode}
+\pdfgentounicode=1
+\hypersetup{pdftitle={Haojie Ye - AI Systems and GPU Architecture},pdfauthor={Haojie Ye},pdfsubject={Professional Resume},pdfcreator={LaTeX}}
+\urlstyle{same}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\raggedright
+\titleformat{\section}{\large\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{14pt}{6pt}
+\setlist[itemize]{leftmargin=13pt,itemsep=4pt,topsep=3pt,parsep=0pt}
+\newcommand{\role}[4]{\textbf{#1}\hfill #2\\{#3}\hfill {#4}\par}
+\newcommand{\paper}[4]{\textbf{#1}\\#2\\\href{#4}{#3}\par\vspace{3pt}}
+\begin{document}
+\fontsize{10.5}{13}\selectfont
+
+{\LARGE\textbf{Haojie Ye}}\\[4pt]
+{\large AI Systems and GPU Architecture}\\[5pt]
+\href{mailto:yehaojie@umich.edu}{yehaojie@umich.edu}\enspace\textbar\enspace
+\href{https://linestro.github.io/}{linestro.github.io}\enspace\textbar\enspace
+\href{https://www.linkedin.com/in/haojie-ye-91b935106/}{LinkedIn}\enspace\textbar\enspace
+\href{https://scholar.google.com/citations?user=8Mk6B6gAAAAJ}{Google Scholar}
+
+AI performance architect with a Ph.D. in Computer Science and Engineering and a research focus on computer architecture. Connects generative AI workloads to GPU design and product decisions through validated performance models, agent-assisted analysis tools, and investigation of compute, memory, and communication bottlenecks.
+
+\section{Experience}
+\role{NVIDIA}{Oct 2024 -- Present}{Deep Learning Performance Architect}{Santa Clara, CA}
+\begin{itemize}
+\item Led performance modeling studies for LLM inference and video generation, translating model assumptions and execution strategies into GPU bottleneck analysis and product tradeoff recommendations.
+\item Implemented and validated simulation capabilities for evolving AI workloads, including sparse attention and parallel execution. Checked model shapes, execution mappings, and run assumptions to strengthen performance comparisons.
+\item Independently developed an agent-assisted performance-attribution component that reconciles execution mappings, explains differences between projections, and surfaces outliers. Integrated it into a broader analysis workflow for repeatable comparison and targeted debugging.
+\item Evaluated compute, memory, interconnect, and hardware-software tradeoffs for future GPU studies; distinguished workload-specific gains from end-to-end effects to inform engineering and product decisions.
+\item Presented technical findings across architecture and product teams, developed study materials, and taught colleagues how to run and explain performance modeling workflows.
+\end{itemize}
+
+\vspace{4pt}
+\role{NVIDIA}{May 2023 -- Aug 2023}{Deep Learning Performance Architect Intern}{Santa Clara, CA}
+\begin{itemize}
+\item Researched performance modeling of large language models on future GPU architectures.
+\end{itemize}
+
+\vspace{4pt}
+\role{Micron Technology}{May 2022 -- Aug 2022}{Advanced Hardware Development Intern}{Allen, TX}
+\begin{itemize}
+\item Researched enhanced in-memory computing functions and memory-system design.
+\end{itemize}
+
+\section{Education}
+\textbf{University of Michigan, Ann Arbor}\\
+Ph.D., Computer Science and Engineering \hfill 2021 -- 2024\\
+Advisor: Prof. Trevor Mudge. GPA: 4.0/4.0.\\
+M.S.E., Computer Science and Engineering \hfill 2019 -- 2021\\
+B.S.E., Computer Engineering \hfill 2017 -- 2019
+
+\textbf{Shanghai Jiao Tong University}\\
+B.S.E., Electrical and Computer Engineering \hfill 2015 -- 2019
+
+\newpage
+{\large\textbf{Haojie Ye}}\hfill AI Systems and GPU Architecture
+
+\section{Selected Research}
+Hardware-software co-design for recommendation inference, GPU and memory systems, graph processing, and sparse computation. Publications at HPCA, ASPLOS, MICRO, ISCA, VLDB, PACT, and other systems venues. Full publication list on \href{https://scholar.google.com/citations?user=8Mk6B6gAAAAJ}{Google Scholar}.
+
+\paper{Palermo: Improving the Performance of Oblivious Memory using Protocol-Hardware Co-Design}{\textbf{H. Ye}, Y. Xia, Y. Chen, K.-Y. Chen, Y. Yuan, S. Deng, B. Kasikci, T. Mudge, N. Talati}{HPCA 2025}{https://doi.org/10.1109/HPCA61900.2025.00038}
+Protocol and hardware co-design to overlap oblivious-memory operations while preserving security guarantees.\par\vspace{3pt}
+
+\paper{GRACE: A Scalable Graph-Based Approach to Accelerating Recommendation Model Inference}{\textbf{H. Ye}, S. Vedula, Y. Chen, Y. Yang, A. Bronstein, R. Dreslinski, T. Mudge, N. Talati}{ASPLOS 2023}{https://doi.org/10.1145/3582016.3582029}
+Graph clustering and embedding partial-sum caching to reduce recommendation inference memory traffic.\par\vspace{3pt}
+
+\paper{Understanding the Performance and Estimating the Cost of LLM Fine-Tuning}{Y. Xia, J. Kim, Y. Chen, \textbf{H. Ye}, S. Kundu, C. Hao, N. Talati}{IISWC 2024}{https://doi.org/10.1109/IISWC63097.2024.00027}
+
+\paper{Locality-aware Optimizations for Improving Remote Memory Latency in Multi-GPU Systems}{L. Belayneh, \textbf{H. Ye}, K.-Y. Chen, D. Blaauw, T. Mudge, R. Dreslinski, N. Talati}{PACT 2022}{https://doi.org/10.1145/3559009.3569649}
+
+\paper{Everest: GPU-Accelerated System For Mining Temporal Motifs}{Y. Yuan, \textbf{H. Ye}, S. Vedula, W. Kaza, N. Talati}{PVLDB 17(2), 2023 / VLDB 2024}{https://doi.org/10.14778/3626292.3626299}
+
+\paper{NDMiner: Accelerating Graph Pattern Mining Using Near Data Processing}{N. Talati, \textbf{H. Ye}, Y. Yang, L. Belayneh, K.-Y. Chen, D. Blaauw, T. Mudge, R. Dreslinski}{ISCA 2022}{https://doi.org/10.1145/3470496.3527437}
+
+\section{Technical Skills}
+\textbf{Languages:} Python, C/C++, CUDA, Verilog, SystemVerilog.\\
+\textbf{Performance and architecture:} Workload characterization, performance modeling, bottleneck analysis, GPU and memory systems, parallel computing, hardware-software co-design, agent-assisted analysis.\\
+\textbf{Tools:} Git; gem5, gem5-gpu, DRAMSim, Ramulator, CACTI, zsim; Cadence, Design Compiler.
+
+\section{Teaching}
+\textbf{University of Michigan --- Graduate Student Instructor}\hfill Sep 2020 -- Jan 2021\\
+EECS 598, Applied Parallel Programming with GPUs. Prepared lecture slides, homework, and exams on GPU microarchitecture and CUDA programming with Prof. Reetuparna Das.
+
+\section{Honors}
+Outstanding Undergraduate Research Award (2019); James B. Angell Scholar (2019).
+
+\end{document}
