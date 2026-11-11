@@ -12,13 +12,14 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
   <div class="container">
-    <main>
+    <main id="main-content" tabindex="-1">
 
       <!-- ============ HEADER ============ -->
-      <div class="header">
+      <header class="header">
         <div class="profile-column">
-          <img src="assets/images/profile.jpg" alt="Haojie Ye" class="profile-photo" />
+          <img src="assets/images/profile.jpg" alt="Haojie Ye" class="profile-photo" width="160" height="160" />
           <div class="personal-links-row">
 
             <!-- LinkedIn -->
@@ -45,40 +46,42 @@
           </div>
         </div>
         <div>
-          <h1>Haojie Ye <span class="name-chinese">叶皓桀</span></h1>
+          <h1>Haojie Ye <span class="name-chinese" lang="zh-Hans">叶皓桀</span></h1>
           <span class="title-tag">Deep Learning Performance Architect · NVIDIA</span>
           <div class="about-me">
             <p>
-              I connect <span class="highlight-interest">AI workloads</span> with
-              <span class="highlight-interest">GPU architecture</span> as a Deep Learning Performance Architect at
-              <a href="https://www.nvidia.com" class="highlight-blue-yellow">NVIDIA</a>.
-              I build and validate performance models, investigate system bottlenecks, and turn complex results
-              into clear engineering and product recommendations.
+              I build performance models that explain how <span class="highlight-interest">AI workloads</span> use
+              <span class="highlight-interest">GPU hardware</span>. At
+              <a href="https://www.nvidia.com" class="highlight-blue-yellow">NVIDIA</a>, I use those insights to
+              evaluate architecture tradeoffs and guide engineering and product decisions.
             </p>
             <p>
-              My current work spans <strong>LLM inference and video generation</strong>, architecture tradeoff studies,
-              and <strong>AI-agent-assisted performance analysis</strong>. I take studies from workload assumptions
-              and simulation through validation and technical explanation, working across architecture, engineering,
-              and product teams.
+              My work spans <strong>LLM prefill and decode, video generation, and agent-assisted performance analysis</strong>.
+              I connect attention, precision, and parallelism choices to system performance, taking studies
+              from model assumptions and simulation through validation and technical recommendations.
             </p>
             <p>
               I earned my <strong>Ph.D. in Computer Science and Engineering</strong> at the
               <a href="https://umich.edu/" class="highlight-stroke highlight-institution">University of Michigan</a>,
               advised by <a href="https://tnm.engin.umich.edu/" class="highlight-person-underline">Prof. Trevor Mudge</a>.
-              My research in hardware-software co-design covers recommendation inference, GPU systems,
-              graph processing, sparse computation, and secure memory, with publications at
+              My research connects algorithms and systems through hardware-software co-design, with publications at
               <strong>HPCA, ASPLOS, MICRO, ISCA, VLDB, and PACT</strong>.
             </p>
-            <p>
-              <a href="assets/Resume_HaojieYe.pdf" class="highlight-stroke">Resume PDF</a>
-              &nbsp;&middot;&nbsp;
+            <p class="profile-actions">
+              <a href="assets/Resume_HaojieYe.pdf" class="resume-link">Resume PDF</a>
               <a href="mailto:yehaojie@umich.edu" class="highlight-stroke">yehaojie@umich.edu</a>
-              &nbsp;&middot;&nbsp;
               <a href="https://github.com/Linestro" class="highlight-stroke">GitHub</a>
             </p>
           </div>
         </div>
-      </div>
+      </header>
+
+      <nav class="section-nav" aria-label="Page sections">
+        <a href="#experience">Experience</a>
+        <a href="#research">Research</a>
+        <a href="#education">Education</a>
+        <a href="#beyond-work">Beyond work</a>
+      </nav>
 
       <!-- ============ SELECTED HIGHLIGHTS ============ -->
       <section class="recent-updates-section" aria-labelledby="highlights-heading">
@@ -87,7 +90,7 @@
           <div class="update-item">
             <span class="update-date">2026</span>
             <span><span class="update-badge industry">Industry</span>
-              Led LLM and video-generation performance studies and built an agent-assisted performance-attribution component.
+              Led LLM and video-generation performance studies; developed an agent-assisted tool to explain performance differences.
             </span>
           </div>
           <div class="update-item">
@@ -113,12 +116,14 @@
       </section>
 
       <!-- ============ INDUSTRY EXPERIENCE ============ -->
-      <section class="industry-section" aria-labelledby="industry-heading">
+      <section class="industry-section" id="experience" aria-labelledby="industry-heading">
         <h2 class="section-title" id="industry-heading">Industry Experience</h2>
         <p class="industry-description">
-          I study how model structure, precision, and parallel execution interact with compute,
-          memory, and communication limits. The goal is to make performance behavior explainable
-          and architecture decisions better informed.
+          My experience includes performance modeling for the
+          <a href="https://www.nvidia.com/en-us/products/workstations/professional-desktop-gpus/rtx-pro-6000-family/" class="highlight-stroke">NVIDIA RTX PRO 6000 Blackwell</a>
+          family and <a href="https://www.nvidia.com/en-us/data-center/technologies/rubin/" class="highlight-stroke">Rubin</a>
+          architecture studies. I focus on how model structure and execution strategy interact with
+          compute, memory, and communication limits.
         </p>
 
         <div class="industry-card">
@@ -130,27 +135,25 @@
             <span class="industry-card-date">Oct 2024 &ndash; Present</span>
           </div>
           <ul class="industry-bullets">
-            <li><strong>Generative AI workload modeling:</strong> Led performance studies of LLM inference and
-              video generation, connecting model assumptions and execution strategies to GPU bottlenecks
-              and product tradeoffs.</li>
-            <li><strong>Model development and validation:</strong> Implemented and validated simulation capabilities
-              for evolving AI workloads, including sparse attention and parallel execution. Checked model shapes,
-              execution mappings, and run assumptions to strengthen the basis for performance comparisons.</li>
-            <li><strong>Agent-assisted performance attribution:</strong> Independently developed an analysis component
-              that reconciles execution mappings, explains differences between performance projections, and surfaces
-              outliers for investigation. Integrated it into a broader analysis workflow for repeatable comparison
-              and targeted debugging.</li>
-            <li><strong>Architecture and product insight:</strong> Evaluated compute, memory, interconnect,
-              and hardware-software tradeoffs to inform future GPU studies. Distinguished workload-specific gains
-              from end-to-end effects and translated findings into recommendations for engineering and product partners.</li>
-            <li><strong>Technical communication and enablement:</strong> Presented performance analysis across teams,
-              developed study materials, and taught colleagues how to run and explain modeling workflows.</li>
+            <li><strong>Generative AI performance:</strong> Led studies of LLM prefill and decode and video generation,
+              analyzing attention and precision choices to identify GPU bottlenecks and evaluate product tradeoffs.</li>
+            <li><strong>Parallelism and model validation:</strong> Modeled tensor, context, and expert parallelism
+              and implemented simulation capabilities for sparse attention. Validated model shapes, execution
+              mappings, and run assumptions to make performance comparisons more reliable.</li>
+            <li><strong>Agent-assisted analysis:</strong> Independently developed a component that reconciles
+              execution mappings, explains differences between projections, and identifies outliers.
+              Integrated it into a broader workflow for repeatable comparison and targeted debugging.</li>
+            <li><strong>Architecture guidance:</strong> Evaluated compute, memory, and interconnect tradeoffs
+              for GPU architecture studies. Controlled for execution-mapping differences when interpreting
+              end-to-end results and forming engineering and product recommendations.</li>
+            <li><strong>Technical leadership:</strong> Presented findings across teams and developed materials
+              to teach colleagues how to run, validate, and explain performance studies.</li>
           </ul>
           <div class="tech-tags">
             <span class="tag">LLM Inference</span><span class="tag">Video Generation</span>
             <span class="tag">GPU Architecture</span><span class="tag">Performance Modeling</span>
             <span class="tag">AI Agents</span><span class="tag">Memory Systems</span>
-            <span class="tag">Parallel Computing</span><span class="tag">Hardware-Software Co-Design</span>
+            <span class="tag">Tensor / Expert Parallelism</span><span class="tag">Hardware-Software Co-Design</span>
           </div>
         </div>
 
@@ -182,7 +185,7 @@
       </section>
 
       <!-- ============ RESEARCH ============ -->
-      <section class="research-section" aria-labelledby="research-heading">
+      <section class="research-section" id="research" aria-labelledby="research-heading">
         <h2 class="section-title" id="research-heading">Selected Research</h2>
         <p class="research-description">
           My academic work pairs workload characterization with architecture and system design to improve
@@ -202,11 +205,11 @@
           <div class="research-content">
             <h3>Palermo: Improving the Performance of Oblivious Memory using Protocol-Hardware Co-Design</h3>
             <div class="research-authors"><strong>H. Ye</strong>, Y. Xia, Y. Chen, K.-Y. Chen, Y. Yuan, S. Deng, B. Kasikci, T. Mudge, N. Talati</div>
-            <div class="research-venue"><a href="https://doi.org/10.1109/HPCA61900.2025.00038" class="venue-link">HPCA 2025</a></div>
+            <div class="research-venue"><a href="https://doi.org/10.1109/HPCA61900.2025.00038" class="venue-link">HPCA 2025</a><span class="authorship-note">First author</span></div>
             <p>Palermo co-designs an oblivious RAM protocol and hardware controller to overlap memory operations while preserving correctness and security guarantees. The paper evaluates how protocol and architecture choices reduce the performance cost of protecting memory access patterns.</p>
             <div class="research-links">
-              <a href="https://arxiv.org/abs/2411.05400">Paper</a>
-              <a href="assets/papers/palermo_hpca25.pdf">PDF</a>
+              <a href="https://arxiv.org/abs/2411.05400" aria-label="Read the Palermo paper">Paper</a>
+              <a href="assets/papers/palermo_hpca25.pdf" aria-label="Palermo paper PDF">PDF</a>
             </div>
           </div>
         </article>
@@ -221,12 +224,12 @@
           <div class="research-content">
             <h3>GRACE: A Scalable Graph-Based Approach to Accelerating Recommendation Model Inference</h3>
             <div class="research-authors"><strong>H. Ye</strong>, S. Vedula, Y. Chen, Y. Yang, A. Bronstein, R. Dreslinski, T. Mudge, N. Talati</div>
-            <div class="research-venue"><a href="https://doi.org/10.1145/3582016.3582029" class="venue-link">ASPLOS 2023</a></div>
+            <div class="research-venue"><a href="https://doi.org/10.1145/3582016.3582029" class="venue-link">ASPLOS 2023</a><span class="authorship-note">First author</span></div>
             <p>GRACE clusters an item co-occurrence graph and caches embedding partial sums to reduce recommendation inference memory traffic. It pairs an algorithmic approach to recurring item combinations with a scalable system design.</p>
             <div class="research-links">
-              <a href="https://doi.org/10.1145/3582016.3582029">Paper</a>
-              <a href="assets/papers/grace_asplos23.pdf">PDF</a>
-              <a href="https://github.com/Linestro/GRACE">Code</a>
+              <a href="https://doi.org/10.1145/3582016.3582029" aria-label="Read the GRACE paper">Paper</a>
+              <a href="assets/papers/grace_asplos23.pdf" aria-label="GRACE paper PDF">PDF</a>
+              <a href="https://github.com/Linestro/GRACE" aria-label="GRACE source code">Code</a>
               <a href="https://www.youtube.com/watch?v=GOLQUGjBH7I" class="link-talk">ASPLOS talk</a>
             </div>
           </div>
@@ -245,7 +248,7 @@
             <div class="research-venue"><a href="https://doi.org/10.1109/IISWC63097.2024.00027" class="venue-link">IISWC 2024</a></div>
             <p>This work characterizes single-GPU fine-tuning of sparse and dense mixture-of-experts language models. An analytical model estimates throughput and cloud training cost to support infrastructure choices.</p>
             <div class="research-links">
-              <a href="https://arxiv.org/abs/2408.04693">Paper</a>
+              <a href="https://arxiv.org/abs/2408.04693" aria-label="Read the LLM fine-tuning paper">Paper</a>
             </div>
           </div>
         </article>
@@ -263,8 +266,8 @@
             <div class="research-venue"><a href="https://doi.org/10.14778/3626292.3626299" class="venue-link">PVLDB 17(2), 2023 / VLDB 2024</a></div>
             <p>Everest accelerates temporal motif mining on GPUs through query-specific code generation, runtime load balancing, and multi-GPU graph partitioning. It connects graph-query structure to efficient parallel execution.</p>
             <div class="research-links">
-              <a href="https://www.vldb.org/pvldb/vol17/p162-yuan.pdf">Paper</a>
-              <a href="https://github.com/yichao-yuan-99/Everest">Code</a>
+              <a href="https://www.vldb.org/pvldb/vol17/p162-yuan.pdf" aria-label="Read the Everest paper">Paper</a>
+              <a href="https://github.com/yichao-yuan-99/Everest" aria-label="Everest source code">Code</a>
             </div>
           </div>
         </article>
@@ -282,8 +285,8 @@
             <div class="research-venue"><a href="https://doi.org/10.1145/3559009.3569649" class="venue-link">PACT 2022</a></div>
             <p>This work introduces locality-adaptive remote memory transfers and a remote-only cache for multi-GPU systems. The architecture targets remote access latency by matching transfer and caching behavior to workload locality.</p>
             <div class="research-links">
-              <a href="https://doi.org/10.1145/3559009.3569649">Paper</a>
-              <a href="assets/papers/pact22_multiGPU.pdf">PDF</a>
+              <a href="https://doi.org/10.1145/3559009.3569649" aria-label="Read the multi-GPU remote memory paper">Paper</a>
+              <a href="assets/papers/pact22_multiGPU.pdf" aria-label="Multi-GPU remote memory paper PDF">PDF</a>
             </div>
           </div>
         </article>
@@ -301,7 +304,7 @@
             <div class="research-venue"><a href="https://doi.org/10.1145/3470496.3527437" class="venue-link">ISCA 2022</a></div>
             <p>NDMiner combines near-data execution, compiler support, and memory mapping to accelerate graph pattern mining. The design addresses the irregular memory access and control flow that make this workload difficult to execute efficiently.</p>
             <div class="research-links">
-              <a href="https://doi.org/10.1145/3470496.3527437">Paper</a>
+              <a href="https://doi.org/10.1145/3470496.3527437" aria-label="Read the NDMiner paper">Paper</a>
             </div>
           </div>
         </article>
@@ -319,7 +322,7 @@
             <div class="research-venue"><a href="https://doi.org/10.1109/MICRO56248.2022.00089" class="venue-link">MICRO 2022</a></div>
             <p>Mint introduces an accelerator architecture and programming model for temporal motif mining. It exploits parallelism while handling both structural and temporal constraints in graph queries.</p>
             <div class="research-links">
-              <a href="https://doi.org/10.1109/MICRO56248.2022.00089">Paper</a>
+              <a href="https://doi.org/10.1109/MICRO56248.2022.00089" aria-label="Read the Mint paper">Paper</a>
             </div>
           </div>
         </article>
@@ -337,7 +340,7 @@
             <div class="research-venue"><a href="https://doi.org/10.1145/3392717.3392751" class="venue-link">ICS 2020</a></div>
             <p>Sparse-TPU co-designs sparse matrix packing and a systolic-array architecture to improve sparse matrix-vector multiplication efficiency. The work examines how data representation and hardware support can make better use of array resources.</p>
             <div class="research-links">
-              <a href="https://doi.org/10.1145/3392717.3392751">Paper</a>
+              <a href="https://doi.org/10.1145/3392717.3392751" aria-label="Read the Sparse-TPU paper">Paper</a>
             </div>
           </div>
         </article>
@@ -345,8 +348,8 @@
       </section>
 
       <!-- ============ EDUCATION ============ -->
-      <section class="education-section">
-        <h2 class="section-title">Education</h2>
+      <section class="education-section" id="education" aria-labelledby="education-heading">
+        <h2 class="section-title" id="education-heading">Education</h2>
         <div class="edu-item">
           <div class="edu-content">
             <p class="edu-degree">Ph.D., Computer Science &amp; Engineering</p>
@@ -380,8 +383,8 @@
       </section>
 
       <!-- ============ MISC ============ -->
-      <section class="misc-section">
-        <h2 class="section-title">Beyond Work</h2>
+      <section class="misc-section" id="beyond-work" aria-labelledby="beyond-work-heading">
+        <h2 class="section-title" id="beyond-work-heading">Beyond Work</h2>
         <ul class="misc-list">
           <li>Piano player and electronic music producer — <a href="https://www.bilibili.com/video/av24197866/" class="highlight-stroke">Vaporwave &amp; ambient experiments</a></li>
           <li>Experimental film enthusiast — Tarkovsky, Lynch, early Kubrick</li>
